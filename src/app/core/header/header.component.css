@@ -1,0 +1,20 @@
+.content-banner {
+  grid-area: banner;
+}
+
+.content-nav {
+  grid-area: nav;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "banner"
+  "nav";
+}
+
+.mat-tab-labels{
+  background-color: green !important;
+}

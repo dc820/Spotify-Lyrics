@@ -1,0 +1,18 @@
+<header class="wrapper">
+  <mat-toolbar class="content-banner" color="primary">
+    Spotify Lyrics
+  </mat-toolbar>
+
+  <mat-tab-group class="content-nav" backgroundColor="primary" color="accent" >
+    <mat-tab label="Home">
+      <ng-template matTabContent>
+        <app-home></app-home>
+      </ng-template>
+    </mat-tab>
+    <mat-tab label="About">
+      <ng-template matTabContent>
+        <app-about></app-about>
+      </ng-template>
+    </mat-tab>
+  </mat-tab-group>
+</header>
