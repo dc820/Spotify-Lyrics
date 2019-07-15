@@ -1,18 +1,9 @@
-<header class="wrapper">
-  <mat-toolbar class="content-banner" color="primary">
-    Spotify Lyrics
+<header>
+  <mat-toolbar class="nav-wrapper" color="primary">
+    <p class="nav-logo">Spotify Lyrics</p>
+      <mat-form-field class="nav-search" appearance="outline">
+        <input matInput placeholder="Search Songs & Artists">
+        <mat-icon matSuffix><a href="#">search</a></mat-icon>
+      </mat-form-field>
   </mat-toolbar>
-
-  <mat-tab-group class="content-nav" backgroundColor="primary" color="accent" >
-    <mat-tab label="Home">
-      <ng-template matTabContent>
-        <app-home></app-home>
-      </ng-template>
-    </mat-tab>
-    <mat-tab label="About">
-      <ng-template matTabContent>
-        <app-about></app-about>
-      </ng-template>
-    </mat-tab>
-  </mat-tab-group>
 </header>

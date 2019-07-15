@@ -1,26 +1,3 @@
-mat-form-field {
-  width: 92.5%;
-}
-
-.content-negative {
-  grid-area: negative;
-}
-
-.content-search {
-  margin-top: 10%;
-  grid-area: search;
-}
-
-.content-main {
-  grid-area: main;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas:
-    ". . . negative . . ."
-    ". search search search search search ."
-    "main main main main main main main";
+main {
+  height: 80vh;
 }
