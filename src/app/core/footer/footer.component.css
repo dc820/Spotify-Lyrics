@@ -3,3 +3,6 @@ footer {
   position: absolute;
   bottom: 0;
 }
+div {
+  height: 80vh;
+}
