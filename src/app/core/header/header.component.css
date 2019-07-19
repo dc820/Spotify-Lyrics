@@ -36,6 +36,7 @@
 }
 
 mat-form-field {
+  /*visibility:*/
   color: black !important;
   font-size: 12px;
   width: 80%;
@@ -52,8 +53,5 @@ p {
 
 a {
   text-decoration: none;
-}
-
-a {
   color: inherit;
 }

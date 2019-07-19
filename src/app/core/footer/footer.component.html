@@ -1,10 +1,15 @@
 <footer>
-  <mat-tab-group headerPosition="below" backgroundColor="primary" color="accent" >
-    <mat-tab label="Home">
+  <mat-tab-group headerPosition="below" backgroundColor="primary" color="accent">
+    <mat-tab label="Search">
       <ng-template matTabContent>
         <div>
-          <app-home></app-home>
+          <router-outlet></router-outlet>
         </div>
+      </ng-template>
+    </mat-tab>
+    <mat-tab label="Lyrics">
+      <ng-template matTabContent>
+        <!-- INSERT UPCOMING EVENTS PAGE-->
       </ng-template>
     </mat-tab>
     <mat-tab label="Upcoming Events">

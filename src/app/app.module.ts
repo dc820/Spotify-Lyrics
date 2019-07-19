@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
 
 import {
   MatToolbarModule,
@@ -14,6 +15,7 @@ import { HeaderComponent } from './core/header/header.component';
 import { HomeComponent } from './core/home/home.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './core/footer/footer.component';
+import { SongComponent } from './song/song.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,12 @@ import { FooterComponent } from './core/footer/footer.component';
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    SongComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
