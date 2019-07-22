@@ -3,6 +3,17 @@ footer {
   position: absolute;
   bottom: 0;
 }
-div {
-  height: 80vh;
+
+@media screen and (max-height: 640px) {
+  div {
+    height: 80vh;
+  }
 }
+
+/*
+@media screen and (min-height: 641px) {
+  div {
+    height: 84vh;
+  }
+}
+*/

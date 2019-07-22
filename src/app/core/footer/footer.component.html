@@ -1,26 +1,26 @@
 <footer>
-  <mat-tab-group headerPosition="below" backgroundColor="primary" color="accent">
+  <mat-tab-group headerPosition="below" backgroundColor="primary" color="accent" mat-stretch-tabs selectedIndex="3">
+    <!-- EVENTS -->
+    <mat-tab label="Events" >
+      <ng-template matTabContent>
+        <div>
+          <app-events></app-events>
+        </div>
+      </ng-template>
+    </mat-tab>
+    <!-- LYRICS-->
+    <mat-tab label="Lyrics">
+      <ng-template matTabContent>
+        <div>
+          <app-lyrics></app-lyrics>
+        </div>
+      </ng-template>
+    </mat-tab>
+    <!-- SEARCH -->
     <mat-tab label="Search">
       <ng-template matTabContent>
         <div>
           <router-outlet></router-outlet>
-        </div>
-      </ng-template>
-    </mat-tab>
-    <mat-tab label="Lyrics">
-      <ng-template matTabContent>
-        <!-- INSERT UPCOMING EVENTS PAGE-->
-      </ng-template>
-    </mat-tab>
-    <mat-tab label="Upcoming Events">
-      <ng-template matTabContent>
-        <!-- INSERT UPCOMING EVENTS PAGE-->
-      </ng-template>
-    </mat-tab>
-    <mat-tab label="About">
-      <ng-template matTabContent>
-        <div>
-          <app-about></app-about>
         </div>
       </ng-template>
     </mat-tab>

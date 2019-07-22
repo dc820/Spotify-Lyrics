@@ -1,0 +1,33 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "search"
+}
+
+.search {
+  grid-area: search;
+  align-self: center;
+  justify-self: center;
+  width: 85%;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color:#fbfbfb;
+  border-radius: 5px;
+  height: 60%;
+  margin-top: 0.25rem;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix  {
+  padding: 0.5rem 0;
+  margin-bottom: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+mat-form-field {
+  color: black !important;
+  font-size: 12px;
+  width: 80%;
+}

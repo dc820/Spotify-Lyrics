@@ -1,6 +1,6 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: auto;
   grid-template-rows: 5% 80% 15%;
   grid-template-areas:
   "title"
