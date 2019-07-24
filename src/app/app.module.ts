@@ -32,8 +32,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     MatToolbarModule,
     MatIconModule,
     MatInputModule,

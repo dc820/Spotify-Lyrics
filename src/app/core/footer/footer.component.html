@@ -18,11 +18,9 @@
     </mat-tab>
     <!-- SEARCH -->
     <mat-tab label="Search">
-      <ng-template matTabContent>
-        <div>
-          <router-outlet></router-outlet>
-        </div>
-      </ng-template>
+      <div [@routeAnimations]="prepareRoute(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
+      </div>
     </mat-tab>
   </mat-tab-group>
 </footer>

@@ -3,7 +3,7 @@
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-areas:
-  "search"
+  "search";
 }
 
 .search {
@@ -27,7 +27,6 @@
 }
 
 mat-form-field {
-  color: black !important;
+  color: black;
   font-size: 12px;
-  width: 80%;
 }
