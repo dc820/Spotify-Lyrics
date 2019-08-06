@@ -1,7 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { CookieService } from 'ngx-cookie-service';
 
 import {
   MatToolbarModule,
@@ -18,6 +20,7 @@ import { LyricsComponent } from './lyrics/lyrics.component';
 import { EventsComponent } from './events/events.component';
 import { ResultsComponent } from './results/results.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +31,13 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     LyricsComponent,
     EventsComponent,
     ResultsComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    AuthComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
+    HttpClientModule,
     AppRoutingModule,
     MatToolbarModule,
     MatIconModule,
@@ -41,7 +46,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     MatTabsModule
 
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

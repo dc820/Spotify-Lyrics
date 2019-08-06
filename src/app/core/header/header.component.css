@@ -10,8 +10,13 @@
   grid-area: nav-logo;
   align-self: center;
   justify-self: center;
+  font-size: 16px;
 }
 
-p {
-  font-size: 16px;
+.nav-account {
+  grid-area: nav-logo;
+  align-self: center;
+  justify-self: end;
+  font-size: 13px;
+  padding: 0px !important;
 }
