@@ -8,7 +8,7 @@ import { AuthComponent } from './auth/auth.component';
 const routes: Routes = [
 
   { path: '', component: HomeComponent, data: { animation: 'HomePage' } },
-  { path: 'auth', component: AuthComponent },
+  { path: 'user', component: AuthComponent },
   { path: 'results', component: ResultsComponent, data: { animation: 'ResultsPage' }}
 ];
 

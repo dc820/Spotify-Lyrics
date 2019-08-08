@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-const SPOTIFY_ENDPOINT = 'http://localhost:3000/api/spotify/';
+const SPOTIFY_ENDPOINT = 'http://localhost:4000/api/spotify/';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +15,20 @@ export class HttpService {
   constructor(private http: HttpClient) { }
 
   login() {
-    location.assign('http://localhost:4000/api/spotify/login');
+    window.location.assign(SPOTIFY_ENDPOINT + 'login');
+  }
+
+  getToken() {
+
+  }
+
+  refreshToken() {
+    this.http.get(SPOTIFY_ENDPOINT + 'refresh_token').subscribe(response => {
+      console.log(response);
+    });
+  }
+
+  search() {
+
   }
 }
