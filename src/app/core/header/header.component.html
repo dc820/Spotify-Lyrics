@@ -1,6 +1,6 @@
 <header>
   <mat-toolbar class="nav-wrapper" color="primary">
     <p class="nav-logo" [routerLink]="['/']" routerLinkActive="router-link-active">Spotify Lyrics</p>
-   <button mat-button class="nav-account" (click)="login()">Login <mat-icon matSuffix>account_circle</mat-icon></button>
+   <button mat-button class="nav-account" (click)="login()">{{ loginName }} <mat-icon matSuffix>account_circle</mat-icon></button>
   </mat-toolbar>
 </header>

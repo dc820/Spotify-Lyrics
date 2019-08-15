@@ -9,8 +9,14 @@ import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 export class SearchBarComponent implements OnInit {
   @ViewChild('search', {read: ElementRef, static: true})
   search: ElementRef;
+  userInput = '';
 
   ngOnInit() {
     this.search.nativeElement.focus();
+  }
+  // Change Function Name
+  consoleInput() {
+    console.log(this.userInput);
+    // Add Debounce Function
   }
 }

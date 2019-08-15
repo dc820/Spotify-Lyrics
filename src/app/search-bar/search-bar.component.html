@@ -1,6 +1,8 @@
 <div class="wrapper">
   <mat-form-field class="search" appearance="outline">
-    <input #search matInput placeholder="Search Songs & Artists" autofocus>
+    <input matInput #search placeholder="Search Songs & Artists" [(ngModel)]="userInput" (keyup)="consoleInput()" autofocus>
     <mat-icon matSuffix>search</mat-icon>
   </mat-form-field>
 </div>
+
+<p>{{userInput}}</p>

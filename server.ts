@@ -129,13 +129,14 @@ app.get('/api/spotify/callback', (req, res) => {
         // use the access token to access the Spotify Web API
         request.get(options, (err, reply, profile) => {
           console.log(profile);
-          const now = new Date().getTime();
-          const expiration = ''; // Set Expiration Time Here
-          console.log(now);
-          res.redirect('/#' +
+          const now = new Date().getTime(); // current time in milliseconds
+          const expirationTime = body.expires_in;  // given in seconds
+          const expires = now + expirationTime; // need conversion then add
+          console.log('token expires on ' + expires);
+          res.redirect('/results/#' +
             querystring.stringify({
               user: profile.id,
-              session: body.expires_in
+              session: expires
           }));
         });
 

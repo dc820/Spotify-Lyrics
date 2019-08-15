@@ -21,6 +21,7 @@ import { EventsComponent } from './events/events.component';
 import { ResultsComponent } from './results/results.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { AuthComponent } from './auth/auth.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { AuthComponent } from './auth/auth.component';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
+    FormsModule,
     HttpClientModule,
     AppRoutingModule,
     MatToolbarModule,
